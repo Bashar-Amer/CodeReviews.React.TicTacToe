@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  margin: 0;
+  color: #333;
+}
+
+/* Main Game Container */
+.game {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Status Text */
+.status {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+
+/* Board Layout using Flexbox */
+.board-row {
+  display: flex;
+}
+
+/* Modernized Squares */
+.square {
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  font-size: 40px;
+  font-weight: bold;
+  color: #2c3e50;
+  height: 80px;
+  width: 80px;
+  margin-right: -2px;
+  margin-top: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* Prevent double borders on the top and left edges */
+.board-row:first-child .square {
+  border-top: 2px solid #e0e0e0;
+}
+.square:first-child {
+  border-left: 2px solid #e0e0e0;
+}
+
+.square:hover {
+  background-color: #f8f9fa;
+}
+
+/* History Sidebar */
+.game-info {
+  min-width: 200px;
+}
+
+.game-info ol {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 48px; /* Aligns history buttons below the status text */
+}
+
+/* History Buttons */
+.game-info button {
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  width: 100%;
+  text-align: left;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.game-info button:hover {
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
+  transform: translateX(4px);
+}
