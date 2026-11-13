@@ -1,16 +1,39 @@
-# React + Vite
+# React Tic-Tac-Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive Tic-Tac-Toe game built with **React** and **Vite**, featuring full move history tracking and time-travel functionality.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Two-Player Gameplay:** Alternating turns between Player `X` and Player `O`.
+- **Win Detection:** Automatically evaluates all 8 winning board combinations and declares the winner.
+- **Move History (Time Travel):** Tracks every board state in an array, allowing players to jump back to any previous move or reset the board to the start.
+- **Modern UI:** Styled with Flexbox, responsive hover transitions, and a clean card-based layout.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** (Functional Components & `useState` Hook)
+- **Vite** (Development server & build tool)
+- **CSS3** (Flexbox layout & custom transitions)
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Bashar-Amer/CodeReviews.React.TicTacToe
+2. Navigate into the project directory:
+   ```bash
+   cd CodeReviews.React.TicTacToe
+3. Install dependencies:
+  ```bash
+   npm install
+4. Start the local development server:
+  ```bash
+   npm run dev
+5. Open the local URL shown in your terminal (usually http://localhost:5173) in your browser.
+
