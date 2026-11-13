@@ -24,20 +24,20 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 ### Installation & Setup
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/Bashar-Amer/CodeReviews.React.TicTacToe
-   ```
+```bash
+git clone https://github.com/Bashar-Amer/CodeReviews.React.TicTacToe
+```
 2. Navigate into the project directory:
-   ```bash
-   cd CodeReviews.React.TicTacToe
-   ```
+```bash
+cd CodeReviews.React.TicTacToe
+```
 3. Install dependencies:
-  ```bash
+```bash
 npm install
 ```
 4. Start the local development server:
 ```bash
-   npm run dev
+npm run dev
 ```
 5. Open the local URL shown in your terminal (usually http://localhost:5173) in your browser.
 
